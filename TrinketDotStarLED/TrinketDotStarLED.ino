@@ -1,12 +1,9 @@
-// An example demonstrating how to control the Adafruit Dot Star RGB LED
-// included on board the ItsyBitsy M4 board.
+// Using Trinket Dot Star LED to show status
 
 #include <Adafruit_DotStar.h>
 
-// There is only one pixel on the board
 #define NUMPIXELS 1 
 
-//Use these pin definitions for the ItsyBitsy M4
 #define DATAPIN    7
 #define CLOCKPIN   8
 
@@ -19,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-  showColor(65000);             // Flowing rainbow cycle along the whole strip
+  showColor(65000);
 }
 
 
