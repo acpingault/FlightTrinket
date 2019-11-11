@@ -16,11 +16,20 @@ void setup() {
 }
 
 void loop() {
-  showColor(65000);
+  flightStatusFlash(0);
 }
 
 
 void showColor(int color) {
     strip.setPixelColor(0, strip.gamma32(strip.ColorHSV(color)));
     strip.show(); // Update strip with new contents  
+}
+
+void flightStatusFlash(int status){
+    if(status == 0){
+      showColor(30000);
+      delay(250);
+      showColor(55000);
+    }
+    delay(500);
 }
